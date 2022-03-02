@@ -84,6 +84,50 @@ export default function Frontpage() {
         clearTimer(getDeadTime())
     }, [])
 
+    // method 2 to fine lead coins without updating to database
+
+    //  const initialCoins = { netCoins: 1100, grosscoins: 2100 }
+    //     function reducer(state, action) {
+    //         switch (action.type) {
+    //             case "getCurrentCoinsValue":
+    //                 return {
+    //                     netCoins: state.netCoins + 100,
+    //                     grosscoins: state.grosscoins + state.netCoins + 100,
+    //                 }
+    //             case "decrement":
+    //                 return { netCoins: state.netCoins - 1 }
+    //         }
+    //     }
+
+    //     function useReducer(userDetails, initState) {
+    //         const [state, setState] = useState(initState)
+    //         const dispatch = useCallback(
+    //             (action) => {
+    //                 const nextState = userDetails(state, action)
+    //                 setState(nextState)
+    //             },
+    //             [setState, state]
+    //         )
+
+    //         return [state, dispatch]
+    //     }
+    //     const [state, dispatch] = useReducer(reducer, initialCoins)
+
+
+
+
+    // const handleSubmit = async (e) => {
+
+    //     fetch("http://localhost:2222/user/userlogin", requestOptions)
+    //         .then((response) => response.json())
+    //         .then((data) => {
+    //             setuserDetails(data.data)
+    //             console.log(data)
+
+    //             setIsLoggedIn(true)
+    //         })
+    // }
+
     // Get Date and Time
     const current = new Date()
     const date = `${current.getDate()}/${current.getMonth() + 1
