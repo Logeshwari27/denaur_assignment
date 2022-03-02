@@ -1,0 +1,36 @@
+.container {
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  border: 1px solid white;
+  row-gap: 30px;
+}
+.title {
+  justify-self: center;
+  font-weight: 500;
+  font-family: cursive;
+}
+
+.name_section {
+  border: 1px solid #b9b3b3;
+  border-radius: 5px;
+}
+
+.username_section {
+  border: 1px solid #b9b3b3;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.submitbutton {
+  background: #4b0082;
+  border-radius: 5px;
+  color: floralwhite;
+  text-align: center;
+  font-family: ui-rounded;
+  font-size: xx-large;
+}
+@media (min-width: 414px) and (max-width: 896px) {
+  .container {
+    display: grid;
+  }
+}
